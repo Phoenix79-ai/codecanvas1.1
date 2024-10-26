@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing</title>
+  
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Josefin+Sans:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: left;
+            padding: 20px 20px;
+            background-color:#f4f4f4;
+        }
+
+        header h1 {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        header button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header button:hover {
+            background-color: #333;
+        }
+
+        .clients {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+
+        .services {
+            text-align: left;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .services .highlight {
+            font-weight: bold;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding: 50px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cta-container {
+            background-color: #e0e0e0;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 50px auto;
+        }
+
+        .cta-content {
+            max-width: 400px;
+        }
+
+        .cta-content h1 {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .cta-content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: none; 
+            border: 2px solid #333; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            font-weight: bold;
+            cursor: pointer; 
+            margin-right: 0; 
+            color: #333; 
+            transition: background 0.3s; 
+        }
+        }
+
+        .cta-button:hover {
+            background-color: #333;
+        }
+
+        .cta-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .cta-image .circle {
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .cta-image .circle::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cta-image .star {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 40px solid #a0f83a;
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+        }
+
+        .cta-image .spike {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 30px solid #000;
+            position: absolute;
+            top: -40px;
+            right: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- Navbar -->
+     <header>
+        <nav class="navbar">
+            <div class="logo">Wizardz</div> 
+            <ul class="nav-sub"> 
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Use Cases</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+            </ul>
+            <button class="cta-button">Request a Quote</button> 
+        </nav>
+    </header>
+    <!-- Header Section -->
+    <header>
+        <h1>Navigating the digital landscape for success</h1>
+        <p>Our digital marketing team helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+        <button>Book a consultation</button>
+    </header>
+
+    <div class="illustration">
+        <div class="megaphone"></div>
+        <div class="icon heart"></div>
+        <div class="play-button"></div>
+        <div class="location"></div>
+        <div class="icon share"></div>
+        <div class="circle"></div>
+
+
+    </div>
+
+    <!-- Clients Section -->
+    <section class="clients">
+        <img src="amazon-logo.png" alt="Amazon">
+        <img src="dribble-logo.png" alt="Dribble">
+        <img src="hubspot-logo.png" alt="Hubspot">
+        <img src="notion-logo.png" alt="Notion">
+        <img src="netflix-logo.png" alt="Netflix">
+        <img src="zoom-logo.png" alt="Zoom">
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-heading">
+            <span class="highlight">Services</span>
+            <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online.</p>
+        </div>
+    </section>
+
+    <section class="services-grid">
+        <!-- SEO Card -->
+        <div class="card">
+            <div class="card-content">
+                <div class="service-info">
+                    <span class="highlight">Search engine optimization</span>
+                    <img src="seo-icon.png" alt="SEO Icon">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Pay per click Card -->
+        <div class="card dark">
+            <div class="card-content">
+                <div class="service-info">
+                    <span class="title">Pay per click advertising</span>
+                    <img src="ppc-icon.png" alt="PPC Icon">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Social Media Marketing Card -->
+        <div class="card dark">
+            <div class="card-content">
+                <div class="service-info">
+                    <span class="title">Social media marketing</span>
+                    <img src="social-media-icon.png" alt="Social Media Icon">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Email Marketing Card -->
+        <div class="card">
+            <div class="card-content">
+                <div class="service-info">
+                    <span class="highlight">E-mail marketing</span>
+                    <img src="email-marketing-icon.png" alt="Email Icon">
+                </div>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Call to Action Section -->
+    <div class="cta-container">
+        <div class="cta-content">
+            <h1>Let's make things happen</h1>
+            <p>Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
+            <a href="#" class="cta-button">Get your free proposal</a>
+        </div>
+        <div class="cta-image">
+            <div class="circle"></div>
+            <div class="star"></div>
+            <div class="spike"></div>
+        </div>
+    </div>
+
+    <section class="case-study">
+        <div class="services-heading">
+            <span class="highlight">Case Study</span>
+            <p>Explore Real Life Examples Of our proven digital marketing success through Our Case Studies.</p>
+        </div>
+    </section>
+    <div class="cases">
+      <div class="case">
+        <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+        <a href="#" class="learn-more">Learn More <span>&#8599;</span></a>
+      </div>
+      <div class="case">
+        <p>For a B2B software company, we developed an SEO strategy that resulted in a first-page ranking for key keywords and a 200% increase in organic traffic.</p>
+        <a href="#" class="learn-more">Learn More <span>&#8599;</span></a>
+      </div>
+      <div class="case">
+        <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+        <a href="#" class="learn-more">Learn More <span>&#8599;</span></a>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Digital Marketing</p>
+    </footer>
+
+</body>
+</html>
